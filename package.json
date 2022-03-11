@@ -4,7 +4,7 @@
   "main": "./src/index.ts",
   "author": "Vincent Emonet <vincent.emonet@gmail.com>",
   "private": true,
-  "license": "MIT License",
+  "license": "MIT",
   "scripts": {
     "build": "ldwizard-build ./config.ts",
     "dev": "yarn build && cd lib && http-server ."

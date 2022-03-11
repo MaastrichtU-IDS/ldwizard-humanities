@@ -9,6 +9,7 @@ WORKDIR /opt
 RUN git clone --branch fix-sparql-autocomplete https://github.com/vemonet/LDWizard-Core.git
 WORKDIR /opt/LDWizard-Core
 RUN yarn
+RUN yarn build
 
 WORKDIR /app
 COPY package.json ./
