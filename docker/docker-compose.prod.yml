@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ldwizard:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      args: 
+        CONFIG_FILE: ./config.ts
+
+    environment:
+      - VIRTUAL_HOST=humanities.wizard.semanticscience.org
+      - LETSENCRYPT_HOST=humanities.wizard.semanticscience.org
+      - VIRTUAL_PORT=80

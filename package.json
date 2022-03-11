@@ -1,0 +1,25 @@
+{
+  "name": "ldwizard-humanities",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "author": "Vincent Emonet <vincent.emonet@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "ldwizard-build ./config.ts",
+    "dev": "yarn build && cd lib && http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vemonet/ldwizard-humanities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vemonet/ldwizard-humanities/issues"
+  },
+  "homepage": "https://github.com/vemonet/ldwizard-humanities#readme",
+  "dependencies": {
+    "@netwerkdigitaalerfgoed/ldwizard": "file:/opt/LDWizard-Core",
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0"
+  }
+}
