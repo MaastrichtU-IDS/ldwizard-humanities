@@ -8,7 +8,7 @@ const homepage = require("./homepage.md");
 const wizardConfig: WizardConfig = {
   appName: "LDWizard - Humanities and Social Sciences",
   defaultBaseIri: "https://w3id.org/umids/wizard/",
-  primaryColor: "#ffc107", // orange
+  primaryColor: "#4caf50", // green
   secondaryColor: "#1565c0", // blue
   homepageMarkdown: homepage,
   publishOrder: ["download"],
