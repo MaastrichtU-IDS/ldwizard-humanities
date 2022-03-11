@@ -1,12 +1,13 @@
 version: '3'
 services:
   ldwizard:
+    # image: ghcr.io/maastrichtu-ids/ldwizard-humanities:latest
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
       args: 
         CONFIG_FILE: ./config.ts
-
+        
     environment:
       - VIRTUAL_HOST=humanities.wizard.semanticscience.org
       - LETSENCRYPT_HOST=humanities.wizard.semanticscience.org

@@ -9,14 +9,13 @@ WORKDIR /opt
 RUN git clone --branch fix-sparql-autocomplete https://github.com/vemonet/LDWizard-Core.git
 WORKDIR /opt/LDWizard-Core
 RUN yarn
-RUN yarn build
 
 WORKDIR /app
 COPY package.json ./
 COPY yarn.lock ./
 RUN yarn 
 COPY . .
-ARG CONFIG_FILE
+ARG CONFIG_FILE=./config.ts
 RUN yarn exec ldwizard-build ${CONFIG_FILE}
 
 
