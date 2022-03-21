@@ -83,6 +83,7 @@ We have loaded a few ontologies to the SPARQL endpoint used for Classes/Predicat
 To add more properties to the autocomplete you can load a new ontology with those properties, you just need to make sure you use `rdfs:label` and `rdfs:comment`
 
 * SemanticScience ontology (in the `resources` folder, to change the predicates to use `rdfs:comment`)
+* Get RDFS vocabulary: `curl -L http://www.w3.org/2000/01/rdf-schema > resources/rdfs.ttl`
 * https://schema.org/version/latest/schemaorg-current-https.ttl
 * http://purl.org/dc/terms: https://lov.linkeddata.es/dataset/lov/vocabs/dcterms/versions/2012-06-14.n3
 * http://www.w3.org/ns/prov#: https://lov.linkeddata.es/dataset/lov/vocabs/prov/versions/2015-01-11.n3
