@@ -80,7 +80,7 @@ Follow these steps to build the application locally:
 
 We have loaded a few ontologies to the SPARQL endpoint used for Classes/Predicates autocompletion in our GraphDB triplestore: https://graphdb.dumontierlab.com/graphs in the repository `ldwizard-humanities`
 
-To add more properties to the autocomplete you can load a new ontology with those properties, you just need to make sure you use `rdfs:label` and `rdfs:comment`
+To add more properties to the autocomplete you can load a new ontology with new properties in the triplestore, you just need to make sure you use `rdfs:label` and `rdfs:comment` for your properties label and description.
 
 * SemanticScience ontology (in the `resources` folder, to change the predicates to use `rdfs:comment`)
 * Get RDFS vocabulary: `curl -L http://www.w3.org/2000/01/rdf-schema > resources/rdfs.ttl`
