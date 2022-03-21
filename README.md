@@ -78,9 +78,11 @@ Follow these steps to build the application locally:
 
 ## Ontologies used
 
-We have loaded a few ontologies to the SPARQL endpoint used for Classes/Predicates autocompletion: https://graphdb.dumontierlab.com/repositories/ldwizard-humanities
+We have loaded a few ontologies to the SPARQL endpoint used for Classes/Predicates autocompletion in our GraphDB triplestore: https://graphdb.dumontierlab.com/graphs in the repository `ldwizard-humanities`
 
-* SemanticScience ontology (in the `resources` folder, to change the predicates to use `rdfs:comment`):
+To add more properties to the autocomplete you can load a new ontology with those properties, you just need to make sure you use `rdfs:label` and `rdfs:comment`
+
+* SemanticScience ontology (in the `resources` folder, to change the predicates to use `rdfs:comment`)
 * https://schema.org/version/latest/schemaorg-current-https.ttl
 * http://purl.org/dc/terms: https://lov.linkeddata.es/dataset/lov/vocabs/dcterms/versions/2012-06-14.n3
 * http://www.w3.org/ns/prov#: https://lov.linkeddata.es/dataset/lov/vocabs/prov/versions/2015-01-11.n3
