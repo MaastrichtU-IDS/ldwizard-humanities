@@ -6,7 +6,10 @@ RUN npm install --quiet node-gyp -g
 
 # Install the LDWizard-Core bin from git to get latest fix:
 WORKDIR /opt
-RUN git clone --branch fix-sparql-autocomplete https://github.com/vemonet/LDWizard-Core.git
+RUN git clone --branch dev https://github.com/vemonet/LDWizard-Core.git
+
+## Use this line when using LDWizard-Core locally for dev
+# ADD LDWizard-Core LDWizard-Core
 WORKDIR /opt/LDWizard-Core
 RUN yarn
 RUN yarn build

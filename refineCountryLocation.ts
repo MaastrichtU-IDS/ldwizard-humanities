@@ -1,22 +1,15 @@
 import { ColumnRefinement } from "@netwerkdigitaalerfgoed/ldwizard/types/WizardConfig";
 
 const transformation: ColumnRefinement = {
-  label: "Convert location 1 0 columns",
-  type: "to-iri",
+  label: "Convert boolean to URI",
+  type: "single-param",
   description:
-    "This transformation will generate the URI only when value is 1",
-  transformation: async (searchTerm: string, data: any) => {
-    console.log(searchTerm)
-    console.log(data)
-    // const sources = ["http://vocab.getty.edu/aat/sparql"];
-    // return getUriOfSearchTerm(sources, searchTerm);
-    if (searchTerm.length == 3) {
-      return `http://lexvo.org/id/iso639-3/${searchTerm}`
+    "This transformation will generate the given URI only when the value of the row is 1, or true.",
+  transformation: async (searchTerm: string, param: any) => {
+    if (searchTerm === '1' || searchTerm.toLowerCase() === 'true') {
+      return param
     }
-    if (searchTerm.length == 2) {
-      return `http://lexvo.org/id/iso639-1/${searchTerm}`
-    }
-    return searchTerm
+    return null
   },
 };
 export default transformation;

@@ -1,6 +1,6 @@
 import WizardConfig, { PrefixEntry } from "@netwerkdigitaalerfgoed/ldwizard/types/WizardConfig";
 import RefineLangIsoToUri from "./refineLangIsoToUri";
-// import RefineCountryLocation from "./refineCountryLocation";
+import RefineCountryLocation from "./refineCountryLocation";
 // @ts-ignore
 const logo = require("./um_logo.png").default;
 // @ts-ignore
@@ -24,7 +24,7 @@ const wizardConfig: WizardConfig = {
 
   columnRefinements: [
     RefineLangIsoToUri,
-    // RefineCountryLocation,
+    RefineCountryLocation,
   ],
 
   getAllowedPrefixes: async () => {
