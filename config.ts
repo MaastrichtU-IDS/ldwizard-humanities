@@ -1,4 +1,4 @@
-import WizardConfig, { PrefixEntry } from "@netwerkdigitaalerfgoed/ldwizard/types/WizardConfig";
+import WizardConfig, { PrefixEntry } from "@pldn/ldwizard/types/WizardConfig";
 import RefineLangIsoToUri from "./refineLangIsoToUri";
 import RefineCountryLocation from "./refineCountryLocation";
 // @ts-ignore

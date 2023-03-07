@@ -9,7 +9,7 @@ This application uses the [LD Wizard](https://github.com/netwerk-digitaal-erfgoe
 
 You can use this application online at https://humanities.wizard.semanticscience.org
 
-## 🐳 Deploy with Docker 
+## 🐳 Deploy with Docker
 
 You will need to have [Docker installed](https://docs.docker.com/get-docker/) to deploy the LDWizard.
 
@@ -37,7 +37,7 @@ yarn add file:./../LDWizard-Core
 
 ⚠️ This will change the `package.json` and `yarn.lock`, be careful to not commit them
 
-The original LDWizard version is: `"@netwerkdigitaalerfgoed/ldwizard": "^1.1.0",`
+The original LDWizard version is: `"@pldn/ldwizard": "^1.1.0",`
 
 Use a specific branch instead of the published package (to get fixes before new releases):
 

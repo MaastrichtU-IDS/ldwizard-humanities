@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/vemonet/ldwizard-humanities#readme",
   "dependencies": {
-    "@netwerkdigitaalerfgoed/ldwizard": "file:/opt/LDWizard-Core",
-    "graphql": "^15.5.0",
-    "graphql-request": "^3.4.0"
+    "@pldn/ldwizard": "^2.0.0"
   }
 }

@@ -1,4 +1,4 @@
-import { ColumnRefinement } from "@netwerkdigitaalerfgoed/ldwizard/types/WizardConfig";
+import { ColumnRefinement } from "@pldn/ldwizard/types/WizardConfig";
 
 const transformation: ColumnRefinement = {
   label: "Convert lang ISO to Lexvo URIs",
